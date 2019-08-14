@@ -1,4 +1,4 @@
-console.log("front end js loaded")
+
 document.querySelector("form").addEventListener("submit",(e)=>{
     e.preventDefault();
     document.querySelector("h2").textContent="Loading ..."
