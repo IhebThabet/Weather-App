@@ -10,12 +10,14 @@ document.querySelector("form").addEventListener("submit",(e)=>{
             const status=document.querySelector(".p2")
             const precip=document.querySelector(".p3")
             const humidity=document.querySelector(".p4")
+            const windSpeed=document.querySelector(".p5")
             if(response.error){
                 location.textContent=response.error
                 temperature.textContent=""
                 status.textContent=""
                 precip.textContent=""
                 humidity.textContent=""
+                windSpeed.textContent=""
             }
             else{
                 location.textContent=response.location
@@ -23,6 +25,7 @@ document.querySelector("form").addEventListener("submit",(e)=>{
                 status.textContent="Status : "+response.summary
                 precip.textContent="Precipitation : "+response.precipProbability+ "%"
                 humidity.textContent="Humidity : "+response.humidity
+                windSpeed.textContent="Wind speed : "+response.windSpeed
             }
         })
     })
