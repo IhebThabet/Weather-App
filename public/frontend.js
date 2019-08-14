@@ -3,7 +3,7 @@ document.querySelector("form").addEventListener("submit",(e)=>{
     e.preventDefault();
     document.querySelector("h2").textContent="Loading ..."
     const address=document.querySelector("input").value;
-    fetch("http://localhost:3000/weather?search="+address).then((response)=>{
+    fetch("/weather?search="+address).then((response)=>{
         response.json().then((response)=>{
             const location=document.querySelector("h2")
             const temperature=document.querySelector(".p1")
