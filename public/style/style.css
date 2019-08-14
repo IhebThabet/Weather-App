@@ -1,0 +1,46 @@
+body{
+    font-family:arial;
+    max-width:650px;
+    margin:0px auto;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    padding:0px 20px;
+    
+}
+h1{
+    font-size:80px
+}
+footer{
+    color:#888888;
+    bottom:0px;
+    border-top:1px solid #eeeeee;
+    padding:20px 3px;
+    margin-top:5px;
+    font-size:16px
+    
+}
+.main{
+    flex-grow:1;
+}
+header a{
+    text-decoration: none;
+    margin-right:10px;
+    color:#888888;
+    font-size:25px
+}
+form{
+    margin-top:20px
+}
+input{
+    height:20px;
+    width:50%;
+    padding-left:10px
+}
+button{
+    height:25px;
+    width:80px;
+    cursor: pointer;
+}
+
+
